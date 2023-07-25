@@ -12,17 +12,14 @@
 
 
 int ledPin = 13; // LED connected to pin 13
-
 void setup() {
   // Start serial connection
   Serial.begin(9600);
   // Configure pin 13 as an output
   pinMode(ledPin, OUTPUT);
 }
-
 void loop() {
     int sensorVal = Serial.parseInt();
-
     // Keep in mind the pull-up means the pushbutton's logic is inverted.
     // It goes HIGH when it's open, and LOW when it's pressed.
     // Turn on the LED when the button's pressed, and off when it's not:
@@ -44,17 +41,14 @@ void loop() {
 اردوينو المستقبل
 
 int ledPin = 13; // LED connected to pin 13
-
 void setup() {
   // Start serial connection
   Serial.begin(9600);
   // Configure pin 13 as an output
   pinMode(ledPin, OUTPUT);
 }
-
 void loop() {
     int sensorVal = Serial.parseInt();
-
     // Keep in mind the pull-up means the pushbutton's logic is inverted.
     // It goes HIGH when it's open, and LOW when it's pressed.
     // Turn on the LED when the button's pressed, and off when it's not:
